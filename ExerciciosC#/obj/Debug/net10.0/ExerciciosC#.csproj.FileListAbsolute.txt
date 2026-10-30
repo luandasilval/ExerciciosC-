@@ -12,3 +12,4 @@ C:\Users\56597427858\Desktop\ExerciciosC#\ExerciciosC#\obj\Debug\net10.0\refint\
 C:\Users\56597427858\Desktop\ExerciciosC#\ExerciciosC#\obj\Debug\net10.0\ExerciciosC#.pdb
 C:\Users\56597427858\Desktop\ExerciciosC#\ExerciciosC#\obj\Debug\net10.0\ExerciciosC#.genruntimeconfig.cache
 C:\Users\56597427858\Desktop\ExerciciosC#\ExerciciosC#\obj\Debug\net10.0\ref\ExerciciosC#.dll
+C:\Users\56597427858\Desktop\ExerciciosC#\ExerciciosC#\obj\Debug\net10.0\ExerciciosC#.sourcelink.json
