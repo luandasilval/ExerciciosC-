@@ -30,7 +30,7 @@
 //*Exercicio 3
 int NotaAluno = 5;
 
-if (NotaAluno >= 7)
+if (NotaAluno >= 7 && NotaAluno <= 10)
 {
     Console.WriteLine("Aluno Aprovado!");
 }
@@ -38,7 +38,7 @@ else if (NotaAluno == 5 && NotaAluno < 7)
 {
     Console.WriteLine("Aluno de recuperação");
 }
-else if (NotaAluno<5)
+else if (NotaAluno >= 0 && NotaAluno < 5)
 {
     Console.WriteLine("Aluno Reprovado");
 }
