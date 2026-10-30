@@ -28,32 +28,63 @@
 // Console.WriteLine($"Nome do produto: {NomeProduto}, Quantidade Comprada: {QuantidadeComprada}, Valor unitário: R${PrecoUnitario}, Valor total: R${ValorTotal}");
 
 //*Exercicio 3
+// Console.WriteLine("Digite o nome do aluno: ");
+// string? nomeAluno = Console.ReadLine();
 
-Console.WriteLine("Digite o nome do aluno: ");
-string? nomeAluno = Console.ReadLine();
+// Console.WriteLine("Digite a nota do aluno: ");
+// int NotaAluno = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine("Digite a nota do aluno: ");
-int NotaAluno = int.Parse(Console.ReadLine()!);
-
-if (NotaAluno >= 7 && NotaAluno <= 10)
-{
-    Console.WriteLine("Aluno Aprovado!");
-}
-else if (NotaAluno == 5 && NotaAluno < 7)
-{
-    Console.WriteLine("Aluno de recuperação");
-}
-else if (NotaAluno >= 0 && NotaAluno < 5)
-{
-    Console.WriteLine("Aluno Reprovado");
-}
-else
-{
-    Console.WriteLine("Opção inválida");
-}
+// if (NotaAluno >= 7 && NotaAluno <= 10)
+// {
+//     Console.WriteLine("Aluno Aprovado!");
+// }
+// else if (NotaAluno == 5 && NotaAluno < 7)
+// {
+//     Console.WriteLine("Aluno de recuperação");
+// }
+// else if (NotaAluno >= 0 && NotaAluno < 5)
+// {
+//     Console.WriteLine("Aluno Reprovado");
+// }
+// else
+// {
+//     Console.WriteLine("Opção inválida");
+// }
 
 //*Exercicio 4
 // Console.WriteLine("Digite um número de 1 a 10: ");
-// int numero = int.Parse(Console.ReadLine())!;
+// int numero = int.Parse(Console.ReadLine()!);
 
-// for int 
+// for (int i = 0; i <= 10; i++)
+// {
+//     Console.WriteLine($"{numero} x {i} = {numero * i}");
+// }
+
+//*Exercicio 5
+int secreto = 56;
+
+Console.Write("Tente acertar o número secreto: ");
+int palpite = int.Parse(Console.ReadLine()!);
+
+int tentativa = 1;
+
+while (secreto != palpite)
+{
+    if (secreto > palpite && palpite > 0)
+    {
+        Console.WriteLine("O número secreto é maior.\n");
+    }
+    else if (secreto < palpite && palpite > 0)
+    {
+        Console.WriteLine("O número secreto é menor.\n");
+    }
+    else
+    {
+        Console.WriteLine("Número inválido");
+    }
+    Console.Write("Tente acertar o número secreto: ");
+    palpite = int.Parse(Console.ReadLine()!);
+    tentativa++;
+}
+
+Console.WriteLine($"Você acertou, o número secreto era {palpite} \n Número de tentativas: {tentativa}");
