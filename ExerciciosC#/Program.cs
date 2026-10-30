@@ -28,7 +28,12 @@
 // Console.WriteLine($"Nome do produto: {NomeProduto}, Quantidade Comprada: {QuantidadeComprada}, Valor unitário: R${PrecoUnitario}, Valor total: R${ValorTotal}");
 
 //*Exercicio 3
-int NotaAluno = 5;
+
+Console.WriteLine("Digite o nome do aluno: ");
+string? nomeAluno = Console.ReadLine();
+
+Console.WriteLine("Digite a nota do aluno: ");
+int NotaAluno = int.Parse(Console.ReadLine()!);
 
 if (NotaAluno >= 7 && NotaAluno <= 10)
 {
@@ -46,3 +51,9 @@ else
 {
     Console.WriteLine("Opção inválida");
 }
+
+//*Exercicio 4
+// Console.WriteLine("Digite um número de 1 a 10: ");
+// int numero = int.Parse(Console.ReadLine())!;
+
+// for int 
