@@ -90,25 +90,54 @@
 // Console.WriteLine($"Você acertou, o número secreto era {palpite} \n Número de tentativas: {tentativa}");
 
 //*Exercicio 6
-Console.WriteLine("Digite um número: ");
-int Num1 = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Digite um número: ");
+// int Num1 = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine("Digite outro número: ");
-int Num2 = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Digite outro número: ");
+// int Num2 = int.Parse(Console.ReadLine()!);
 
-int Somar()
+// int Somar()
+// {
+//     int soma = Num1 + Num2;
+//     return soma;
+// }
+
+// int Multiplicar()
+// {
+//     int mult = Num1 * Num2;
+//     return mult;
+// }
+
+// Console.WriteLine($"A soma dos dois numeros é {Somar()} \nE a multiplicação é {Multiplicar()}");
+
+
+//*Exercicio 7
+
+int[] notas = new int[3];
+int media = 0;
+
+Console.Write("Digite a primeira nota: ");
+int n1 = int.Parse(Console.ReadLine()!);
+
+Console.Write("Digite a segunda nota: ");
+int n2 = int.Parse(Console.ReadLine()!);
+
+Console.Write("Digite a terceira nota: ");
+int n3 = int.Parse(Console.ReadLine()!);
+
+notas[0] = n1;
+notas[1] = n2;
+notas[2] = n3;
+
+for (int i = 0; i < notas.Length; i++)
 {
-    int soma = Num1 + Num2;
-    return soma;
+    Console.WriteLine($"Sua {i}ª nota é: {notas[i]}");
 }
 
-int Multiplicar()
+foreach (var nota in notas)
 {
-    int mult = Num1 * Num2;
-    return mult;
+    media = media + nota;
 }
+media = media / notas.Count();
 
-Console.WriteLine($"A soma dos dois numeros é {Somar()} \nE a multiplicação é {Multiplicar()}");
-
-
-
+Console.WriteLine($"A média das suas notas é {media}");
