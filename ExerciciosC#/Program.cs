@@ -14,15 +14,35 @@
 
 
 //*Exercicio 2
-Console.WriteLine("Nome do produto comprado: ");
-string? NomeProduto = Console.ReadLine();
+// Console.WriteLine("Nome do produto comprado: ");
+// string? NomeProduto = Console.ReadLine();
 
-Console.WriteLine("Quantidade comprada do produto: ");
-int QuantidadeComprada = int.Parse(Console.ReadLine())!;
+// Console.WriteLine("Quantidade comprada do produto: ");
+// int QuantidadeComprada = int.Parse(Console.ReadLine())!;
 
-Console.WriteLine("Valor unitário: ");
-decimal PrecoUnitario = decimal.Parse(Console.ReadLine()!);
+// Console.WriteLine("Valor unitário: ");
+// decimal PrecoUnitario = decimal.Parse(Console.ReadLine()!);
 
-decimal ValorTotal = QuantidadeComprada * PrecoUnitario;
+// decimal ValorTotal = QuantidadeComprada * PrecoUnitario;
 
-Console.WriteLine($"Nome do produto: {NomeProduto}, Quantidade Comprada: {QuantidadeComprada}, Valor unitário: R${PrecoUnitario}, Valor total: R${ValorTotal}");
+// Console.WriteLine($"Nome do produto: {NomeProduto}, Quantidade Comprada: {QuantidadeComprada}, Valor unitário: R${PrecoUnitario}, Valor total: R${ValorTotal}");
+
+//*Exercicio 3
+int NotaAluno = 5;
+
+if (NotaAluno >= 7)
+{
+    Console.WriteLine("Aluno Aprovado!");
+}
+else if (NotaAluno == 5 && NotaAluno < 7)
+{
+    Console.WriteLine("Aluno de recuperação");
+}
+else if (NotaAluno<5)
+{
+    Console.WriteLine("Aluno Reprovado");
+}
+else
+{
+    Console.WriteLine("Opção inválida");
+}
