@@ -51,7 +51,7 @@
 //     Console.WriteLine("Opção inválida");
 // }
 
-//*Exercicio 4
+// *Exercicio 4
 // Console.WriteLine("Digite um número de 1 a 10: ");
 // int numero = int.Parse(Console.ReadLine()!);
 
@@ -61,30 +61,54 @@
 // }
 
 //*Exercicio 5
-int secreto = 56;
+// int secreto = 56;
 
-Console.Write("Tente acertar o número secreto: ");
-int palpite = int.Parse(Console.ReadLine()!);
+// Console.Write("Tente acertar o número secreto: ");
+// int palpite = int.Parse(Console.ReadLine()!);
 
-int tentativa = 1;
+// int tentativa = 1;
 
-while (secreto != palpite)
+// while (secreto != palpite)
+// {
+//     if (secreto > palpite && palpite > 0)
+//     {
+//         Console.WriteLine("O número secreto é maior.\n");
+//     }
+//     else if (secreto < palpite && palpite > 0)
+//     {
+//         Console.WriteLine("O número secreto é menor.\n");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Número inválido");
+//     }
+//     Console.Write("Tente acertar o número secreto: ");
+//     palpite = int.Parse(Console.ReadLine()!);
+//     tentativa++;
+// }
+
+// Console.WriteLine($"Você acertou, o número secreto era {palpite} \n Número de tentativas: {tentativa}");
+
+//*Exercicio 6
+Console.WriteLine("Digite um número: ");
+int Num1 = int.Parse(Console.ReadLine()!);
+
+Console.WriteLine("Digite outro número: ");
+int Num2 = int.Parse(Console.ReadLine()!);
+
+int Somar()
 {
-    if (secreto > palpite && palpite > 0)
-    {
-        Console.WriteLine("O número secreto é maior.\n");
-    }
-    else if (secreto < palpite && palpite > 0)
-    {
-        Console.WriteLine("O número secreto é menor.\n");
-    }
-    else
-    {
-        Console.WriteLine("Número inválido");
-    }
-    Console.Write("Tente acertar o número secreto: ");
-    palpite = int.Parse(Console.ReadLine()!);
-    tentativa++;
+    int soma = Num1 + Num2;
+    return soma;
 }
 
-Console.WriteLine($"Você acertou, o número secreto era {palpite} \n Número de tentativas: {tentativa}");
+int Multiplicar()
+{
+    int mult = Num1 * Num2;
+    return mult;
+}
+
+Console.WriteLine($"A soma dos dois numeros é {Somar()} \nE a multiplicação é {Multiplicar()}");
+
+
+
